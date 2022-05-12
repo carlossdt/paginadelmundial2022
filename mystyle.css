@@ -1,0 +1,159 @@
+body{
+  background-image: url("fondomundial.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%, 100%;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 4px 25px -22px black;
+  z-index: 2;
+}
+
+.header{
+  margin: auto;
+  max-width: 1200px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+
+ul, ol{
+  list-style: none;
+}
+
+.nav li a{
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav li a:hover{
+    background-color: #BFC9CA;
+}
+
+.nav>li{
+  float: left;
+}
+
+.nav li ul{
+  display: none;
+  min-width: 140px;
+}
+
+.nav li:hover > ul{
+  display: block;
+}
+
+.nav li ul li{
+  position: relative;
+}
+
+.nav li ul li ul{
+  right:140px;
+  top: 0px;
+}
+
+.titulo{
+  font-size: 40px;
+  color: gold;
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 40px;
+}
+
+.container{
+    max-width: 900px;
+    margin:60px auto;
+}
+.container h1,
+.container p{
+    color: gold;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    padding: 20px 0;
+}
+.container h1{
+    font-size: 4em;
+}
+.container p{
+    font-size: 2em;
+}
+.center-abs{
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+}
+.charts{
+    display: flex;
+}
+.chart{
+    position: relative;
+    width:25%;
+    height: 260px;
+}
+.chart h3{
+    color: #44FA00;
+    font-size: 1.8em;
+    position: absolute;
+    bottom:10px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 10px #000;
+}
+.chart svg{
+    z-index: 2;
+}
+/* DIV CIRCULO DE FONDO */
+.circle{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    z-index:1;
+    border:10px #00FA0B solid;
+    background-color: black;
+}
+.text{
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    font-size: 3.8em;
+    font-weight: 700;
+    color: gold;
+}
+/* SVG CIRCULO */
+.outer{
+    fill:transparent;
+    stroke: #FA00AF;
+    stroke-width: 10; /* grosor del borde */
+    stroke-dasharray: 439; /* numero de relleno del borde, se usa el mismo valor en el script.js */
+    transform: rotate(270deg) translate(-150px, 0);
+    /* giramos el circulo para que su apertura sea en la parte superior
+    y ajustamos su posicion
+    */
+}

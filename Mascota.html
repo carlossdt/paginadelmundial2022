@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mascota oficial mundial</title>
+    <link rel="stylesheet" href="stylemascota.css">
+  </head>
+  <body>
+    <h1>Mascota QATAR 2022</h1>
+    <div align="center"><img src="mascotaqatar.jpg"; width="500px"; height="400px"></div>
+    <br>
+
+    <div align="center"><script type="text/javascript">
+      //Ancho (en pixeles)
+      var sliderwidth="1080px"
+      //Alto
+      var sliderheight="200px"
+      //Velocidad 1-10
+      var slidespeed=2
+      //Color de fondo:
+      slidebgcolor="#000000"
+
+      //Vínculos y enlaces de las imágenes
+      var leftrightslide=new Array()
+      var finalslide=''
+      leftrightslide[0]='<a href="https://www.dazn.com/es-ES/news/fifa-club-world-cup/mascota-mundial-2022-en-qatar-como-es-fotos-historia-y-que-significa-la-eeb/1buvbxqfli9bj17updrmrnk5qt#:~:text=La%20FIFA%20dio%20a%20conocer%20que%20la%20mascota%20del%20Mundial,uno%20puede%20imaginar%20como%20quiera."; target="blank"; title="Mascota Oficial"><img border="3" src="mascota1.jpg"; height="200px";></a>'
+      leftrightslide[1]='<a href="https://www.dazn.com/es-ES/news/fifa-club-world-cup/mascota-mundial-2022-en-qatar-como-es-fotos-historia-y-que-significa-la-eeb/1buvbxqfli9bj17updrmrnk5qt#:~:text=La%20FIFA%20dio%20a%20conocer%20que%20la%20mascota%20del%20Mundial,uno%20puede%20imaginar%20como%20quiera." target="blank" title="Mascota Oficial"><img border="3" src="mascota2.jpg"; height="200px";></a>'
+      leftrightslide[2]='<a href="https://www.dazn.com/es-ES/news/fifa-club-world-cup/mascota-mundial-2022-en-qatar-como-es-fotos-historia-y-que-significa-la-eeb/1buvbxqfli9bj17updrmrnk5qt#:~:text=La%20FIFA%20dio%20a%20conocer%20que%20la%20mascota%20del%20Mundial,uno%20puede%20imaginar%20como%20quiera." target="blank" title="Mascota Oficial"><img border="3" src="mascota3.jpg"; height="200px";></a>'
+      leftrightslide[3]='<a href="https://www.dazn.com/es-ES/news/fifa-club-world-cup/mascota-mundial-2022-en-qatar-como-es-fotos-historia-y-que-significa-la-eeb/1buvbxqfli9bj17updrmrnk5qt#:~:text=La%20FIFA%20dio%20a%20conocer%20que%20la%20mascota%20del%20Mundial,uno%20puede%20imaginar%20como%20quiera." target="blank" title="Mascota Oficial"><img border="3" src="mascota4.jpg"; height="200px";></a>'
+      leftrightslide[4]='<a href="https://www.dazn.com/es-ES/news/fifa-club-world-cup/mascota-mundial-2022-en-qatar-como-es-fotos-historia-y-que-significa-la-eeb/1buvbxqfli9bj17updrmrnk5qt#:~:text=La%20FIFA%20dio%20a%20conocer%20que%20la%20mascota%20del%20Mundial,uno%20puede%20imaginar%20como%20quiera." target="blank" title="Mascota Oficial"><img border="3" src="mascota5.jpg"; height="200px";></a>'
+
+
+      var imagegap=""
+      var slideshowgap=5
+
+
+      var copyspeed=slidespeed
+      leftrightslide='<nobr>'+leftrightslide.join(imagegap)+'</nobr>'
+      var iedom=document.all||document.getElementById
+      if (iedom)
+      document.write('<span id="temp" style="visibility:hidden;position:absolute;top:-100px;left:-9000px">'+leftrightslide+'</span>')
+      var actualwidth=''
+      var cross_slide, ns_slide
+
+      function fillup(){
+      if (iedom){
+      cross_slide=document.getElementById? document.getElementById("test2") : document.all.test2
+      cross_slide2=document.getElementById? document.getElementById("test3") : document.all.test3
+      cross_slide.innerHTML=cross_slide2.innerHTML=leftrightslide
+      actualwidth=document.all? cross_slide.offsetWidth : document.getElementById("temp").offsetWidth
+      cross_slide2.style.left=actualwidth+slideshowgap+"px"
+      }
+      else if (document.layers){
+      ns_slide=document.ns_slidemenu.document.ns_slidemenu2
+      ns_slide2=document.ns_slidemenu.document.ns_slidemenu3
+      ns_slide.document.write(leftrightslide)
+      ns_slide.document.close()
+      actualwidth=ns_slide.document.width
+      ns_slide2.left=actualwidth+slideshowgap
+      ns_slide2.document.write(leftrightslide)
+      ns_slide2.document.close()
+      }
+      lefttime=setInterval("slideleft()",30)
+      }
+      window.onload=fillup
+
+      function slideleft(){
+      if (iedom){
+      if (parseInt(cross_slide.style.left)>(actualwidth*(-1)+8))
+      cross_slide.style.left=parseInt(cross_slide.style.left)-copyspeed+"px"
+      else
+      cross_slide.style.left=parseInt(cross_slide2.style.left)+actualwidth+slideshowgap+"px"
+
+      if (parseInt(cross_slide2.style.left)>(actualwidth*(-1)+8))
+      cross_slide2.style.left=parseInt(cross_slide2.style.left)-copyspeed+"px"
+      else
+      cross_slide2.style.left=parseInt(cross_slide.style.left)+actualwidth+slideshowgap+"px"
+
+      }
+      else if (document.layers){
+      if (ns_slide.left>(actualwidth*(-1)+8))
+      ns_slide.left-=copyspeed
+      else
+      ns_slide.left=ns_slide2.left+actualwidth+slideshowgap
+
+      if (ns_slide2.left>(actualwidth*(-1)+8))
+      ns_slide2.left-=copyspeed
+      else
+      ns_slide2.left=ns_slide.left+actualwidth+slideshowgap
+      }
+      }
+
+
+      if (iedom||document.layers){
+      with (document){
+      document.write('<table border="0" cellspacing="0" cellpadding="0"><td>')
+      if (iedom){
+      write('<div style="position:relative;width:'+sliderwidth+';height:'+sliderheight+';overflow:hidden">')
+      write('<div style="position:absolute;width:'+sliderwidth+';height:'+sliderheight+';background-color:'+slidebgcolor+'" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed">')
+      write('<div id="test2" style="position:absolute;left:0px;top:0px"></div>')
+      write('<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>')
+      write('</div></div>')
+      }
+      else if (document.layers){
+      write('<ilayer width="+sliderwidth+" height="+sliderheight+" name="ns_slidemenu" bgcolor="+slidebgcolor+">')
+      write('<layer left="0" top="0" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed" name="ns_slidemenu2"></layer>')
+      write('<layer left="0" top="0" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed" name="ns_slidemenu3"></layer>')
+      write('</ilayer>')
+      }
+      document.write('</td></table>')
+      }
+      }
+    </script></div>
+
+    <p><b>
+    Se trata de un fantasma llamado La'ebb, el cual fue inspirado en vestimenta típica del país anfitrión, como se acostumbra en cada cita mundialista. Su significado es la liberación, tal indica la traducción de su nombre.
+      <br>
+      <br>
+      Es un turbante blanco propio de la cultura de Oriente Medio y, por extensión, del propio país qatarí.
+
+ En el Islam, es considerado un elemento espiritual de la fe y, antiguamente, quien no lo llevase se desconfiaba de esa persona. Incorpora también lo que se conoce como agal, un cordón que emplea para sujetar la cabeza cuando se coloca la kufiyya o pañuelo palestino.
+
+ El diseño de la mascota se inspira generalmente en características culturales del país anfitrión e intenta representar sus costumbres, trajes típicos, vegetación o aniamles típicos. Habitualmente son formas antropomórficas, la mayoría de las veces de animales.
+
+ La mascota suele estar presente en todos los partidos eventos del mundial y además suele convertirse en juguetes y peluches, convirtiéndose en uno de los principales productos de merchandising de los torneos, orientando las ventas especialmente hacia el mercado infantil.
+
+
+  </body>
+</html>
