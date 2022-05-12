@@ -1,0 +1,40 @@
+body{
+  background-color: #47F18C;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%, 100%;
+}
+
+h1{
+  color: black;
+  text-align: center;
+}
+
+p{
+  color: black;
+  font-family: fantasy;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.ubicacion{
+  align: center;
+}
+
+table, th, td{
+  border: 1px solid black;
+  background-color: white;
+  margin: 0 auto;
+  border-style: groove;
+  width: 800px;
+}
+
+th{
+  background-color: red;
+
+}
+
+h2{
+  text-align: center;
+  background-color: yellow;
+}

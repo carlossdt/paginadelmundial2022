@@ -1,0 +1,33 @@
+body{
+  background-color: white;
+}
+.container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titulo{
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  margin: 30px;
+  font-size: 30px;
+}
+
+.caja img{
+  width: :220px;
+  height: 280px;
+  border-radius: 30px
+}
+
+.caja{
+  margin: 30px;
+}
+
+.caja p{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,41 @@
+body{
+  background-image: url(fondociudadcanada.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%, 100%;
+}
+
+h1{
+  color: black;
+  text-align: center;
+}
+
+p{
+  color: black;
+  font-family: Arial, Helvetica; sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+h2{
+  background-color: yellow;
+  text-align: left;
+  max-width: 325px;
+}
+
+table, th, td{
+  border: 1px solid black;
+  background-color: white;
+  margin: 0 auto;
+  border-style: groove;
+  width: 800px;
+}
+
+th{
+  background-color: red;
+
+}
+
+td{
+  background-color: ;
+}
